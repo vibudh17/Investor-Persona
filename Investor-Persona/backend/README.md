@@ -11,25 +11,6 @@ The backend integrates with a **local LLM runtime (Ollama)** to generate AI-driv
 
 # Architecture
 
-The backend follows a **multi-agent design pattern**:
-
-
-Client (React UI)
-        │
-        ▼
-     FastAPI
-        │
-        ▼
-  Orchestrator Agent
-     │        │        │
-     ▼        ▼        ▼
-Persona   News Logic   Conversation
-Agent     (Rules/ML)      Agent
-     │                    │
-     ▼                    ▼
-      Local LLM via Ollama
-```
-
 ### Agents
 
 **Persona Agent**
